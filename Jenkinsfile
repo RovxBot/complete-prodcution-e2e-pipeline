@@ -59,6 +59,7 @@ pipeline{
         }
     }
 
+
  //       stage("Quality Gate") {
   //          steps {
    //             script {
@@ -125,4 +126,4 @@ pipeline{
     //                mimeType: 'text/html',to: "sam@cooked.beer"
     //      }      
   //  }
-//}
+}
