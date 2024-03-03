@@ -1,6 +1,8 @@
+//Vid at 42:44 - github access tokens need to be created https://www.youtube.com/watch?v=q4g7KJdFSn0
+
 pipeline{
     agent{
-        label "jenkins-agent"
+        label "jenkins-worker"
     }
     tools {
         jdk 'Java17'
@@ -26,7 +28,7 @@ pipeline{
     
         stage("Checkout from SCM"){
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/dmancloud/complete-prodcution-e2e-pipeline'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/RovxBot/complete-prodcution-e2e-pipeline'
             }
 
         }
